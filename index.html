@@ -392,6 +392,76 @@
         </div>
     </section>
 
+    <section class="lead-form-section" id="form-section">
+        <div class="container">
+            <div class="form-grid">
+                <!-- Left: Motivation -->
+                <div class="form-content-col">
+                    <h2 class="form-heading">Рекомендуйте компанию и заберите свой приз!</h2>
+                    <p class="form-intro">Каждая успешная рекомендация, приведшая к подписанию контракта — это ваш гарантированный бонус в €100 и шанс оказаться вдвоем на белоснежном пляже Занзибара. Заполнение займет не больше 60 секунд.</p>
+                    
+                    <div class="form-badges">
+                        <div class="badge-item">
+                            <iconify-icon icon="solar:ticket-sale-bold-duotone"></iconify-icon>
+                            <span>Гарантированные €100</span>
+                        </div>
+                        <div class="badge-item">
+                            <iconify-icon icon="solar:sun-bold-duotone"></iconify-icon>
+                            <span>Розыгрыш тура на Занзибар</span>
+                        </div>
+                        <div class="badge-item">
+                            <iconify-icon icon="solar:stopwatch-bold-duotone"></iconify-icon>
+                            <span>Всего 60 секунд на заполнение</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Form -->
+                <div class="form-card">
+                    <form class="dguv-form" action="#" method="POST">
+                        <div class="form-group">
+                            <label for="userName">Ваше имя</label>
+                            <input type="text" id="userName" name="userName" placeholder="Александр Иванов" required>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="userPhone">Ваш номер телефона</label>
+                                <input type="tel" id="userPhone" name="userPhone" placeholder="+49 ___ ________" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="userEmail">Ваш Email</label>
+                                <input type="email" id="userEmail" name="userEmail" placeholder="alex@example.com" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="companyName">Название рекомендуемой компании</label>
+                            <input type="text" id="companyName" name="companyName" placeholder="GmbH / Фирма, которой нужна проверка DGUV V3" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="companyContact">Контактное лицо или телефон компании</label>
+                            <input type="text" id="companyContact" name="companyContact" placeholder="Имя директора, телефон или её email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="userComment">Комментарий (необязательно)</label>
+                            <textarea id="userComment" name="userComment" rows="3" placeholder="Дополнительная информация, лучшее время для звонка и т.д."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-submit">ОТПРАВИТЬ РЕКОМЕНДАЦИЮ И УЧАСТВОВАТЬ</button>
+
+                        <div class="gdpr-text">
+                            <iconify-icon icon="solar:lock-password-bold-duotone"></iconify-icon>
+                            <p><strong>🇪🇺 Защита данных по стандарту GDPR (Datenschutz):</strong> Мы строго соблюдаем законодательство Германии. Ваши личные данные и контакты рекомендуемой компании зашифрованы и никогда не будут переданы третьим лицам. Нажимая кнопку, вы соглашаетесь с условиями проведения акции.</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <script>
         const menuToggle = document.getElementById('menuToggle');
         const nav = document.querySelector('.nav');
