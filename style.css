@@ -459,6 +459,74 @@ body {
     grid-column: span 2;
 }
 
+/* Hotel Gallery Section */
+.hotel-gallery {
+    background: var(--clr-bg);
+    padding: 6rem 2rem;
+}
+
+.gallery-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.gallery-caption {
+    text-align: center;
+    font-size: 1.1rem;
+    color: var(--clr-text-gray);
+    margin-bottom: 3rem;
+    font-weight: 300;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 250px;
+    gap: 1.5rem;
+}
+
+.gallery-item {
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.gallery-item:hover img {
+    transform: scale(1.08);
+}
+
+.item-ocean {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.item-room {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.item-pool {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.item-terrace {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.item-day {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
 .mobile-menu-btn {
     display: none;
     background: none;
@@ -594,6 +662,16 @@ body {
     .bento-image:first-child {
         grid-column: span 2;
     }
+    
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 200px;
+    }
+    .item-ocean { grid-column: span 2; grid-row: span 2; }
+    .item-room { grid-column: span 1; }
+    .item-pool { grid-column: span 1; }
+    .item-terrace { grid-column: span 2; }
+    .item-day { grid-column: span 2; }
 }
 
 @media (max-width: 480px) {
@@ -705,5 +783,26 @@ body {
     }
     .section-heading.light-heading {
         font-size: 2rem;
+    }
+    
+    .hotel-gallery {
+        padding: 3rem 1.5rem;
+    }
+    .gallery-caption {
+        font-size: 0.95rem;
+        margin-bottom: 2rem;
+    }
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 160px;
+        gap: 0.75rem;
+    }
+    .gallery-item {
+        grid-column: span 1 !important;
+        grid-row: span 1 !important;
+    }
+    .item-ocean {
+        grid-column: span 2 !important;
+        grid-row: span 1 !important;
     }
 }
