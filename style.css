@@ -527,6 +527,63 @@ body {
     grid-row: span 1;
 }
 
+/* Why DGUV Section */
+.why-dguv {
+    background: #ffffff;
+    padding: 5rem 2rem;
+}
+
+.why-header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 2.5rem auto;
+}
+
+.why-intro {
+    font-size: 1.05rem;
+    line-height: 1.5;
+    color: var(--clr-text-gray);
+    margin-top: 1rem;
+}
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.why-card {
+    background: var(--clr-bg);
+    padding: 2rem;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(0,0,0,0.03);
+}
+
+.why-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+}
+
+.why-icon {
+    font-size: 2.2rem;
+    color: var(--clr-accent);
+    margin-bottom: 1rem;
+}
+
+.why-title {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    color: var(--clr-text-dark);
+}
+
+.why-desc {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: var(--clr-text-gray);
+}
+
 .mobile-menu-btn {
     display: none;
     background: none;
@@ -674,6 +731,15 @@ body {
     .item-day { grid-column: span 2; }
 }
 
+@media (max-width: 768px) {
+    .why-grid {
+        grid-template-columns: 1fr;
+    }
+    .why-dguv {
+        padding: 5rem 2rem;
+    }
+}
+
 @media (max-width: 480px) {
     .header {
         padding: 1rem 1.25rem;
@@ -804,5 +870,12 @@ body {
     .item-ocean {
         grid-column: span 2 !important;
         grid-row: span 1 !important;
+    }
+    
+    .why-dguv {
+        padding: 3.5rem 1.5rem;
+    }
+    .why-card {
+        padding: 2rem 1.5rem;
     }
 }
