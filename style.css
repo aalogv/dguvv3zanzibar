@@ -278,6 +278,89 @@ body {
     to { transform: rotate(360deg); }
 }
 
+/* How It Works Section */
+.how-it-works {
+    background: #ffffff;
+    padding: 6rem 2rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-heading {
+    font-family: var(--font-heading);
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 4rem;
+    color: var(--clr-text-dark);
+    line-height: 1.2;
+}
+
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    margin-bottom: 4rem;
+}
+
+.step-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.step-icon {
+    font-size: 3rem;
+    color: var(--clr-accent);
+    margin-bottom: 1.5rem;
+    background: var(--clr-bg);
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.step-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--clr-text-dark);
+}
+
+.step-desc {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--clr-text-gray);
+}
+
+.lifehack-box {
+    background: var(--clr-bg);
+    padding: 2rem 3rem;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.lifehack-icon {
+    font-size: 2.5rem;
+    color: #ff6b00;
+    flex-shrink: 0;
+}
+
+.lifehack-text {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: var(--clr-text-dark);
+}
+
 .mobile-menu-btn {
     display: none;
     background: none;
@@ -395,6 +478,11 @@ body {
         bottom: 5%;
         left: 1rem;
     }
+
+    .how-it-works { padding: 4rem 2rem; }
+    .section-heading { font-size: 2.2rem; margin-bottom: 3rem; }
+    .steps-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+    .lifehack-box { flex-direction: column; text-align: center; padding: 2rem; }
 }
 
 @media (max-width: 480px) {
@@ -477,4 +565,12 @@ body {
         font-size: 3rem;
         left: 0.5rem;
     }
+
+    .how-it-works { padding: 3rem 1.5rem; }
+    .section-heading { font-size: 1.8rem; margin-bottom: 2rem; }
+    .step-icon { width: 60px; height: 60px; font-size: 2.2rem; margin-bottom: 1rem; }
+    .step-title { font-size: 1.1rem; }
+    .lifehack-box { padding: 1.5rem; }
+    .lifehack-icon { font-size: 2rem; }
+    .lifehack-text { font-size: 0.85rem; }
 }
