@@ -392,6 +392,73 @@
         </div>
     </section>
 
+    <section class="faq-section" id="faq">
+        <div class="container faq-container">
+            <h2 class="section-heading">Часто задаваемые вопросы об акции</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Что считается успешной рекомендацией?</span>
+                        <iconify-icon icon="solar:alt-arrow-down-bold-duotone" class="faq-icon"></iconify-icon>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Успешной считается та рекомендация, при которой переданная вами компания выходит с нами на контакт, наши эксперты рассчитывают стоимость, и в итоге стороны заключают официальный договор на проведение проверки электробезопасности DGUV V3.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Когда и как я получу свои гарантированные €100?</span>
+                        <iconify-icon icon="solar:alt-arrow-down-bold-duotone" class="faq-icon"></iconify-icon>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Выплата в размере €100 переводится вам сразу же после того, как по вашей рекомендации будет успешно заключен и подписан официальный договор на проверку бизнеса.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Можно ли мне рекомендовать несколько компаний?</span>
+                        <iconify-icon icon="solar:alt-arrow-down-bold-duotone" class="faq-icon"></iconify-icon>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Да, абсолютно! Количество рекомендаций с вашей стороны никак не ограничено. Более того, это ваш главный лайфхак: больше успешных рекомендаций — больше гарантированных выплат по €100 и значительно выше ваши шансы выиграть главный приз в общем розыгрыше!</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Кто именно принимает участие в розыгрыше поездки на Занзибар?</span>
+                        <iconify-icon icon="solar:alt-arrow-down-bold-duotone" class="faq-icon"></iconify-icon>
+                    </div>
+                    <div class="faq-answer">
+                        <p>В финальном розыгрыше главного приза участвует каждый человек, по чьей рекомендации (наводке) был успешно заключен хотя бы один договор на проведение проверки DGUV V3.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Когда и как будет проходить розыгрыш главного приза?</span>
+                        <iconify-icon icon="solar:alt-arrow-down-bold-duotone" class="faq-icon"></iconify-icon>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Розыгрыш незабываемого 6-дневного премиум-отпуска в 4★ Olzadia Boutique Hotel пройдет сразу по окончании периода проведения акции. Мы проведем его абсолютно прозрачно и честно среди всех квалифицированных участников. Победитель будет выбран случайным образом, а детали процесса мы опубликуем на этой странице и в наших соцсетях.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Что делать, если компания, которую я хочу порекомендовать, находится не в Берлине?</span>
+                        <iconify-icon icon="solar:alt-arrow-down-bold-duotone" class="faq-icon"></iconify-icon>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Это не проблема. Мы работаем по всей Германии. Главное, чтобы рекомендуемый бизнес официально функционировал на территории ФРГ и подпадал под требования закона об обязательной проверке электробезопасности.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="lead-form-section" id="form-section">
         <div class="container">
             <div class="form-grid">
@@ -484,6 +551,23 @@
                 nav.classList.remove('nav-open');
                 menuIcon.setAttribute('icon', 'solar:hamburger-menu-linear');
                 document.body.style.overflow = '';
+            });
+        });
+
+        // FAQ Accordion
+        const faqItems = document.querySelectorAll('.faq-item');
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            question.addEventListener('click', () => {
+                const isActive = item.classList.contains('active');
+                
+                // Close all
+                faqItems.forEach(i => i.classList.remove('active'));
+                
+                // Open clicked if it wasn't active
+                if (!isActive) {
+                    item.classList.add('active');
+                }
             });
         });
     </script>
