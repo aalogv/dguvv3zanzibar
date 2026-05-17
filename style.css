@@ -361,6 +361,104 @@ body {
     color: var(--clr-text-dark);
 }
 
+/* Zanzibar Experience Section (Dark/Coffee Theme) */
+.zanzibar-experience {
+    background: #1a1511;
+    color: #fdfaf6;
+    padding: 8rem 2rem;
+}
+
+.experience-header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 4rem auto;
+}
+
+.section-heading.light-heading {
+    color: #fdfaf6;
+    margin-bottom: 1.5rem;
+}
+
+.experience-intro {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: rgba(253, 250, 246, 0.8);
+}
+
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 300px;
+    gap: 1.5rem;
+}
+
+.bento-card {
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+    background: #2a231d;
+}
+
+.bento-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.bento-image:hover img {
+    transform: scale(1.05);
+}
+
+.bento-text {
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bento-icon {
+    font-size: 2.5rem;
+    color: #e5d2bc;
+    margin-bottom: 1.5rem;
+}
+
+.bento-text h3 {
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    color: #fdfaf6;
+    line-height: 1.3;
+}
+
+.bento-text p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: rgba(253, 250, 246, 0.7);
+}
+
+.bento-accent {
+    background: #e5d2bc;
+    color: #111111;
+}
+
+.bento-accent .bento-icon {
+    color: #111111;
+}
+
+.bento-accent h3 {
+    color: #111111;
+}
+
+.bento-accent p {
+    color: rgba(17, 17, 17, 0.8);
+}
+
+.bento-span-2 {
+    grid-column: span 2;
+}
+
 .mobile-menu-btn {
     display: none;
     background: none;
@@ -483,6 +581,19 @@ body {
     .section-heading { font-size: 2.2rem; margin-bottom: 3rem; }
     .steps-grid { grid-template-columns: 1fr; gap: 2.5rem; }
     .lifehack-box { flex-direction: column; text-align: center; padding: 2rem; }
+    
+    .bento-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .bento-span-2 {
+        grid-column: span 1;
+    }
+    .bento-accent.bento-span-2 {
+        grid-column: span 2;
+    }
+    .bento-image:first-child {
+        grid-column: span 2;
+    }
 }
 
 @media (max-width: 480px) {
@@ -573,4 +684,26 @@ body {
     .lifehack-box { padding: 1.5rem; }
     .lifehack-icon { font-size: 2rem; }
     .lifehack-text { font-size: 0.85rem; }
+    
+    .bento-grid {
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+    }
+    .bento-span-2, 
+    .bento-accent.bento-span-2,
+    .bento-image:first-child {
+        grid-column: span 1;
+    }
+    .bento-image {
+        height: 250px;
+    }
+    .zanzibar-experience {
+        padding: 4rem 1.5rem;
+    }
+    .experience-header {
+        margin-bottom: 3rem;
+    }
+    .section-heading.light-heading {
+        font-size: 2rem;
+    }
 }
