@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DGUV-Expert - Выиграйте тур на Занзибар</title>
+    <meta name="description" content="Реферальная акция от DGUV-Expert. Порекомендуйте клиента и улетите вдвоем на Занзибар!">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Montserrat for elegant uppercase headings, Inter for body text -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</head>
+<body>
+    <div class="hero-section">
+        <header class="header">
+            <a href="#" class="logo">
+                <img src="img/logo.png" alt="DGUV-Expert Logo" class="logo-img">
+                <span class="logo-text">DGUV-EXPERT</span>
+            </a>
+            <nav class="nav">
+                <a href="#">ГЛАВНАЯ</a>
+                <a href="#">О НАС</a>
+                <a href="#">ПРАВИЛА</a>
+                <a href="#">КОНТАКТЫ</a>
+                <a href="#" class="nav-btn">УЧАСТВОВАТЬ</a>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="Открыть меню" id="menuToggle">
+                <iconify-icon icon="solar:hamburger-menu-linear" id="menuIcon"></iconify-icon>
+            </button>
+        </header>
+
+        <main class="hero-content">
+            <div class="hero-text-col">
+                <div class="over-heading">Реферальная акция от DGUV-Expert</div>
+                <h1 class="main-heading">
+                    ПОРЕКОМЕНДУЙТЕ<br class="desktop-br">
+                    <strong>КЛИЕНТА</strong> —<br class="desktop-br">
+                    УЛЕТИТЕ ВДВОЕМ<br class="desktop-br">
+                    <strong>НА ЗАНЗИБАР</strong>
+                </h1>
+                
+                <div class="description">
+                    <div class="trigger">
+                        <iconify-icon icon="solar:wallet-money-bold-duotone" class="trigger-icon"></iconify-icon>
+                        <p><strong>€100 гарантированно</strong> за каждый заключенный договор.</p>
+                    </div>
+                    <div class="trigger">
+                        <iconify-icon icon="solar:plain-bold-duotone" class="trigger-icon"></iconify-icon>
+                        <p><strong>Премиум-отпуск на двоих:</strong> 6 ночей в 4★ отеле Olzadia, перелет и трансфер включены.</p>
+                    </div>
+                    <div class="micro-text">
+                        <iconify-icon icon="solar:stopwatch-linear"></iconify-icon>
+                        <span>Всего 1 минута на заполнение. Количество рекомендаций не ограничено!</span>
+                    </div>
+                </div>
+
+                <a href="#" class="btn-black">УЧАСТВОВАТЬ</a>
+
+                <div class="outline-text">Zanzibar</div>
+
+                <div class="circular-badge">
+                    <svg viewBox="0 0 100 100" class="badge-text-path">
+                        <path id="circlePath" d="M 50, 50 m -35, 0 a 35,35 0 1,1 70,0 a 35,35 0 1,1 -70,0" fill="none" />
+                        <text>
+                            <textPath href="#circlePath" startOffset="0%">
+                                • DGUV-EXPERT • ZANZIBAR TRIP 
+                            </textPath>
+                        </text>
+                    </svg>
+                    <div class="badge-center-icon">
+                        <iconify-icon icon="solar:stars-bold"></iconify-icon>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-image-col">
+                <img src="bg.png" alt="Вид на пляж Занзибара из отеля" class="hero-img">
+            </div>
+        </main>
+    </div>
+
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const nav = document.querySelector('.nav');
+        const menuIcon = document.getElementById('menuIcon');
+
+        menuToggle.addEventListener('click', () => {
+            nav.classList.toggle('nav-open');
+            if (nav.classList.contains('nav-open')) {
+                menuIcon.setAttribute('icon', 'solar:close-linear');
+                document.body.style.overflow = 'hidden';
+            } else {
+                menuIcon.setAttribute('icon', 'solar:hamburger-menu-linear');
+                document.body.style.overflow = '';
+            }
+        });
+
+        // Close menu when clicking a link
+        document.querySelectorAll('.nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                nav.classList.remove('nav-open');
+                menuIcon.setAttribute('icon', 'solar:hamburger-menu-linear');
+                document.body.style.overflow = '';
+            });
+        });
+    </script>
+</body>
+</html>
