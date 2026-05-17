@@ -530,6 +530,17 @@
     </section>
 
     <script>
+        // Sticky Header Effect
+        const header = document.querySelector('.header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile Navigation Toggle
         const menuToggle = document.getElementById('menuToggle');
         const nav = document.querySelector('.nav');
         const menuIcon = document.getElementById('menuIcon');

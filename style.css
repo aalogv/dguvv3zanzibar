@@ -29,6 +29,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    padding-top: 5rem; /* Ensure space for fixed header */
 }
 
 /* Header */
@@ -37,8 +38,22 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem 4rem;
-    position: relative;
-    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    background: transparent;
+}
+
+.header.scrolled {
+    padding: 1rem 4rem;
+    background: rgba(253, 250, 246, 0.85); /* Matches --clr-bg with opacity */
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    box-shadow: 0 4px 30px rgba(0,0,0,0.05);
+    border-bottom: 1px solid rgba(0,0,0,0.05);
 }
 
 .logo {
