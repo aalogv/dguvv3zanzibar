@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AS Lehmann - Выиграйте тур на Занзибар</title>
-    <meta name="description" content="Реферальная акция от AS Lehmann. Порекомендуйте клиента и улетите вдвоем на Занзибар!">
+    <meta name="description"
+        content="Реферальная акция от AS Lehmann. Порекомендуйте клиента и улетите вдвоем на Занзибар!">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Montserrat for elegant uppercase headings, Inter for body text -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Inter:wght@400;500&display=swap"
+        rel="stylesheet">
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 </head>
+
 <body>
     <div class="hero-section">
         <header class="header">
@@ -21,10 +26,15 @@
             </a>
             <nav class="nav">
                 <a href="#">ГЛАВНАЯ</a>
-                <a href="#">О НАС</a>
-                <a href="#">ПРАВИЛА</a>
-                <a href="#">КОНТАКТЫ</a>
-                <a href="#" class="nav-btn">УЧАСТВОВАТЬ</a>
+                <a href="#about">О НАС</a>
+                <a href="#rules">ПРАВИЛА</a>
+                <a href="#contacts">КОНТАКТЫ</a>
+                <div class="lang-switch">
+                    <a href="index.html" class="active">Ru</a>
+                    <span>|</span>
+                    <a href="index-de.html">De</a>
+                </div>
+                <a href="#form-section" class="nav-btn">УЧАСТВОВАТЬ</a>
             </nav>
             <button class="mobile-menu-btn" aria-label="Открыть меню" id="menuToggle">
                 <iconify-icon icon="solar:hamburger-menu-linear" id="menuIcon"></iconify-icon>
@@ -40,15 +50,17 @@
                     УЛЕТИТЕ ВДВОЕМ<br class="desktop-br">
                     <strong>НА ЗАНЗИБАР</strong>
                 </h1>
-                
+
                 <div class="description">
                     <div class="trigger">
                         <iconify-icon icon="solar:wallet-money-bold-duotone" class="trigger-icon"></iconify-icon>
-                        <p><strong>€100 гарантированно</strong> за каждый заключенный договор.</p>
+                        <p><strong>Заправочный сертификат на €100 гарантированно</strong> за каждый заключенный договор.
+                        </p>
                     </div>
                     <div class="trigger">
                         <iconify-icon icon="solar:plain-bold-duotone" class="trigger-icon"></iconify-icon>
-                        <p><strong>Премиум-отпуск на двоих:</strong> 6 ночей в 4★ отеле Olzadia, перелет и трансфер включены.</p>
+                        <p><strong>Премиум-отпуск на двоих:</strong> 6 ночей в 4★ отеле Olzadia, перелет и трансфер
+                            включены.</p>
                     </div>
                     <div class="micro-text">
                         <iconify-icon icon="solar:stopwatch-linear"></iconify-icon>
@@ -56,16 +68,17 @@
                     </div>
                 </div>
 
-                <a href="#" class="btn-black">УЧАСТВОВАТЬ</a>
+                <a href="#form-section" class="btn-black">УЧАСТВОВАТЬ</a>
 
                 <div class="outline-text">Zanzibar</div>
 
                 <div class="circular-badge">
                     <svg viewBox="0 0 100 100" class="badge-text-path">
-                        <path id="circlePath" d="M 50, 50 m -35, 0 a 35,35 0 1,1 70,0 a 35,35 0 1,1 -70,0" fill="none" />
+                        <path id="circlePath" d="M 50, 50 m -35, 0 a 35,35 0 1,1 70,0 a 35,35 0 1,1 -70,0"
+                            fill="none" />
                         <text>
                             <textPath href="#circlePath" startOffset="0%">
-                                • AS LEHMANN • ZANZIBAR TRIP 
+                                • AS LEHMANN • ZANZIBAR TRIP
                             </textPath>
                         </text>
                     </svg>
@@ -74,50 +87,54 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="hero-image-col">
-                <img src="bg.png" alt="Вид на пляж Занзибара из отеля" class="hero-img">
+                <img src="bg.jpg" alt="Вид на пляж Занзибара из отеля" class="hero-img">
             </div>
         </main>
     </div>
 
-    <section class="how-it-works">
+    <section class="how-it-works" id="rules">
         <div class="container">
             <h2 class="section-heading">Как это работает?<br> Всего 3 простых шага до океана</h2>
-            
+
             <div class="steps-grid">
                 <div class="step-card">
                     <div class="step-icon">
                         <iconify-icon icon="solar:document-add-linear"></iconify-icon>
                     </div>
                     <h3 class="step-title">1. Поделитесь контактом</h3>
-                    <p class="step-desc">Укажите телефон или email компании в Германии, которой нужна проверка DGUV V3. Заполнение формы займет ровно 1 минуту.</p>
+                    <p class="step-desc">Укажите телефон или email компании в Германии, которой нужна проверка DGUV V3.
+                        Заполнение формы займет ровно 1 минуту.</p>
                 </div>
-                
+
                 <div class="step-card">
                     <div class="step-icon">
                         <iconify-icon icon="solar:phone-calling-linear"></iconify-icon>
                     </div>
                     <h3 class="step-title">2. Мы всё оформим</h3>
-                    <p class="step-desc">Эксперты сами свяжутся с компанией, сделают расчет и подпишут договор. Вам не нужно ничего продавать!</p>
+                    <p class="step-desc">Эксперты сами свяжутся с компанией, сделают расчет и подпишут договор. Вам не
+                        нужно ничего продавать!</p>
                 </div>
-                
+
                 <div class="step-card">
                     <div class="step-icon">
                         <iconify-icon icon="solar:ticket-bold-duotone"></iconify-icon>
                     </div>
                     <h3 class="step-title">3. Заберите награду</h3>
-                    <p class="step-desc">Договор заключен? Вы гарантированно получаете €100 и автоматически становитесь участником розыгрыша тура на Занзибар.</p>
+                    <p class="step-desc">Договор заключен? Вы гарантированно получаете заправочный сертификат на €100 и
+                        автоматически становитесь участником розыгрыша тура на Занзибар.</p>
                 </div>
             </div>
-            
+
             <div class="lifehack-box">
                 <div class="lifehack-icon">
                     <iconify-icon icon="solar:fire-bold-duotone"></iconify-icon>
                 </div>
                 <div class="lifehack-text">
                     <strong>Лайфхак:</strong> Количество рекомендаций не ограничено!<br>
-                    Передайте 5 успешных контактов = получите <strong>€500 гарантированно</strong> и в 5 раз увеличите свои шансы улететь на Занзибар.
+                    Передайте 5 успешных контактов = получите <strong>заправочные сертификаты на €500
+                        гарантированно</strong> и в 5 раз увеличите свои шансы улететь на Занзибар.
                 </div>
             </div>
         </div>
@@ -126,36 +143,41 @@
     <section class="zanzibar-experience">
         <div class="container">
             <div class="experience-header">
-                <h2 class="section-heading light-heading">Главный приз: Неделя роскошного отдыха на океане для двоих</h2>
-                <p class="experience-intro">Забудьте о серых буднях и рабочих задачах в Германии. Мы продумали всё до мелочей, чтобы вы и ваш близкий человек насладились безупречным экзотическим отпуском.</p>
+                <h2 class="section-heading light-heading">Главный приз: Неделя роскошного отдыха на океане для двоих
+                </h2>
+                <p class="experience-intro">Забудьте о серых буднях и рабочих задачах в Германии. Мы продумали всё до
+                    мелочей, чтобы вы и ваш близкий человек насладились безупречным экзотическим отпуском.</p>
             </div>
-            
+
             <div class="bento-grid">
                 <!-- Row 1 -->
                 <div class="bento-card bento-image bento-span-2">
-                    <img src="img/olzadia_pool.png" alt="Бассейн Olzadia">
+                    <img src="img/olzadia_pool.jpg" alt="Бассейн Olzadia">
                 </div>
                 <div class="bento-card bento-text">
                     <iconify-icon icon="solar:plain-bold-duotone" class="bento-icon"></iconify-icon>
                     <h3>Удобный перелет</h3>
-                    <p>Туда и обратно: Вы сами выбираете удобный аэропорт вылета — Берлин, Франкфурт, Мюнхен или Цюрих.</p>
+                    <p>Туда и обратно: Вы сами выбираете удобный аэропорт вылета — Берлин, Франкфурт, Мюнхен или Цюрих.
+                    </p>
                 </div>
-                
+
                 <!-- Row 2 -->
                 <div class="bento-card bento-text">
                     <iconify-icon icon="solar:bus-bold-duotone" class="bento-icon"></iconify-icon>
                     <h3>Комфортный трансфер</h3>
-                    <p>Встретим вас в аэропорту Занзибара и доставим прямо в отель, а в конце отдыха бережно привезем обратно.</p>
+                    <p>Встретим вас в аэропорту Занзибара и доставим прямо в отель, а в конце отдыха бережно привезем
+                        обратно.</p>
                 </div>
                 <div class="bento-card bento-text bento-accent bento-span-2">
                     <iconify-icon icon="solar:bed-bold-duotone" class="bento-icon"></iconify-icon>
                     <h3>6 ночей в раю (4★ Olzadia)</h3>
-                    <p>Стильный бутик-отель в уединенном уголке. Расположен ровно в 0 метрах от пляжа Мичамви-Каэ — океан будет прямо у ваших ног! Пары оценивают атмосферу на 9,2 из 10.</p>
+                    <p>Стильный бутик-отель в уединенном уголке. Расположен ровно в 0 метрах от пляжа Мичамви-Каэ —
+                        океан будет прямо у ваших ног! Пары оценивают атмосферу на 9,2 из 10.</p>
                 </div>
-                
+
                 <!-- Row 3 -->
                 <div class="bento-card bento-image">
-                    <img src="img/olzadia_beach.png" alt="Пляж Занзибара">
+                    <img src="img/olzadia_beach.jpg" alt="Пляж Занзибара">
                 </div>
                 <div class="bento-card bento-text">
                     <iconify-icon icon="solar:cup-hot-bold-duotone" class="bento-icon"></iconify-icon>
@@ -163,19 +185,21 @@
                     <p>Каждое утро для вас — индивидуальное меню, вегетарианские или безглютеновые блюда на выбор.</p>
                 </div>
                 <div class="bento-card bento-image">
-                    <img src="img/olzadia_terrace.png" alt="Терраса ресторана">
+                    <img src="img/olzadia_terrace.jpg" alt="Терраса ресторана">
                 </div>
-                
+
                 <!-- Row 4 -->
                 <div class="bento-card bento-text bento-span-2">
                     <iconify-icon icon="solar:swimming-bold-duotone" class="bento-icon"></iconify-icon>
                     <h3>Атмосфера релакса</h3>
-                    <p>Дизайнерские номера с кондиционером и Wi-Fi, открытый бассейн, ресторан, уютный бар, спа-центр и даже караоке.</p>
+                    <p>Дизайнерские номера с кондиционером и Wi-Fi, открытый бассейн, ресторан, уютный бар, спа-центр и
+                        даже караоке.</p>
                 </div>
                 <div class="bento-card bento-text">
                     <iconify-icon icon="solar:map-bold-duotone" class="bento-icon"></iconify-icon>
                     <h3>Экзотический бонус</h3>
-                    <p>Чтобы путешествие запомнилось навсегда, мы уже включили 1 бесплатную увлекательную экскурсию по острову.</p>
+                    <p>Чтобы путешествие запомнилось навсегда, мы уже включили 1 бесплатную увлекательную экскурсию по
+                        острову.</p>
                 </div>
             </div>
         </div>
@@ -188,19 +212,19 @@
             </p>
             <div class="gallery-grid">
                 <div class="gallery-item item-ocean">
-                    <img src="img/olzadia_beach.png" alt="Океан у отеля">
+                    <img src="img/olzadia_beach.jpg" alt="Океан у отеля">
                 </div>
                 <div class="gallery-item item-room">
-                    <img src="img/olzadia_room.png" alt="Интерьер номера">
+                    <img src="img/olzadia_room.jpg" alt="Интерьер номера">
                 </div>
                 <div class="gallery-item item-pool">
-                    <img src="img/olzadia_evening_pool.png" alt="Вечерний бассейн">
+                    <img src="img/olzadia_evening_pool.jpg" alt="Вечерний бассейн">
                 </div>
                 <div class="gallery-item item-terrace">
-                    <img src="img/olzadia_terrace.png" alt="Терраса ресторана">
+                    <img src="img/olzadia_terrace_evening.jpg" alt="Терраса ресторана">
                 </div>
                 <div class="gallery-item item-day">
-                    <img src="img/olzadia_pool.png" alt="Отдых у бассейна">
+                    <img src="img/olzadia_pool.jpg" alt="Отдых у бассейна">
                 </div>
             </div>
         </div>
@@ -210,9 +234,10 @@
         <div class="container">
             <div class="why-header">
                 <h2 class="section-heading">Почему компании в Германии гарантированно согласятся на проверку?</h2>
-                <p class="why-intro">DGUV V3 — это не просто формальность, а строгий закон. Вы помогаете знакомому бизнесу закрыть обязательное требование и защититься от огромных рисков.</p>
+                <p class="why-intro">DGUV V3 — это не просто формальность, а строгий закон. Вы помогаете знакомому
+                    бизнесу закрыть обязательное требование и защититься от огромных рисков.</p>
             </div>
-            
+
             <div class="why-grid">
                 <!-- Card 1 -->
                 <div class="why-card">
@@ -220,34 +245,43 @@
                         <iconify-icon icon="solar:scale-bold-duotone"></iconify-icon>
                     </div>
                     <h3 class="why-title">Это жесткое требование закона</h3>
-                    <p class="why-desc">Абсолютно все предприятия, офисы, склады, мастерские и госучреждения в Германии обязаны регулярно проверять всё свое электрооборудование — от розеток и станков до обычных офисных ноутбуков и удлинителей. Ответственность за это всегда несёт лично работодатель.</p>
+                    <p class="why-desc">Абсолютно все предприятия, офисы, склады, мастерские и госучреждения в Германии
+                        обязаны регулярно проверять всё свое электрооборудование — от розеток и станков до обычных
+                        офисных ноутбуков и удлинителей. Ответственность за это всегда несёт лично работодатель.</p>
                 </div>
-                
+
                 <!-- Card 2 -->
                 <div class="why-card">
                     <div class="why-icon">
                         <iconify-icon icon="solar:shield-warning-bold-duotone"></iconify-icon>
                     </div>
                     <h3 class="why-title">Защита от блокировок и штрафов</h3>
-                    <p class="why-desc">Если у компании нет актуального протокола проверки от квалифицированных электриков (Elektrofachkräfte), она рискует получить колоссальные штрафы от профсоюзов (Berufsgenossenschaft), а в худшем случае — получить предписание о полной остановке производства.</p>
+                    <p class="why-desc">Если у компании нет актуального протокола проверки от квалифицированных
+                        электриков (Elektrofachkräfte), она рискует получить колоссальные штрафы от профсоюзов
+                        (Berufsgenossenschaft), а в худшем случае — получить предписание о полной остановке
+                        производства.</p>
                 </div>
-                
+
                 <!-- Card 3 -->
                 <div class="why-card">
                     <div class="why-icon">
                         <iconify-icon icon="solar:danger-triangle-bold-duotone"></iconify-icon>
                     </div>
                     <h3 class="why-title">Отказ страховой в выплатах</h3>
-                    <p class="why-desc">В случае любого ЧП (например, пожара из-за неисправного кабеля или травмы сотрудника) страховая компания не выплатит бизнесу ни одного евро, если проверка DGUV V3 не была проведена вовремя. Работодателю придется платить из своего кармана.</p>
+                    <p class="why-desc">В случае любого ЧП (например, пожара из-за неисправного кабеля или травмы
+                        сотрудника) страховая компания не выплатит бизнесу ни одного евро, если проверка DGUV V3 не была
+                        проведена вовремя. Работодателю придется платить из своего кармана.</p>
                 </div>
-                
+
                 <!-- Card 4 -->
                 <div class="why-card">
                     <div class="why-icon">
                         <iconify-icon icon="solar:graph-up-bold-duotone"></iconify-icon>
                     </div>
                     <h3 class="why-title">Снижение расходов и безопасность</h3>
-                    <p class="why-desc">Регулярный аудит выявляет скрытые дефекты оборудования на ранней стадии. Это защищает команду от ударов током и снижает долгосрочные затраты компании на ремонт инфраструктуры.</p>
+                    <p class="why-desc">Регулярный аудит выявляет скрытые дефекты оборудования на ранней стадии. Это
+                        защищает команду от ударов током и снижает долгосрочные затраты компании на ремонт
+                        инфраструктуры.</p>
                 </div>
             </div>
         </div>
@@ -257,9 +291,10 @@
         <div class="container">
             <div class="check-header">
                 <h2 class="section-heading">Что именно подлежит обязательной проверке?</h2>
-                <p class="check-intro">Если говорить просто: проверять нужно абсолютно всё, что вставляется в розетку или подключено к электросети здания. Закон делит эти устройства на две категории.</p>
+                <p class="check-intro">Если говорить просто: проверять нужно абсолютно всё, что вставляется в розетку
+                    или подключено к электросети здания. Закон делит эти устройства на две категории.</p>
             </div>
-            
+
             <div class="check-grid">
                 <!-- Card 1: Mobile devices -->
                 <div class="check-card">
@@ -275,19 +310,23 @@
                             <li>
                                 <iconify-icon icon="solar:question-circle-bold-duotone"></iconify-icon>
                                 <div>
-                                    <strong>Что это такое:</strong> Любые электроприборы, которые можно легко взять в руки, перенести или передвинуть во время работы. Из-за перемещения они подвержены наибольшему риску.
+                                    <strong>Что это такое:</strong> Любые электроприборы, которые можно легко взять в
+                                    руки, перенести или передвинуть во время работы. Из-за перемещения они подвержены
+                                    наибольшему риску.
                                 </div>
                             </li>
                             <li>
                                 <iconify-icon icon="solar:laptop-minimalistic-bold-duotone"></iconify-icon>
                                 <div>
-                                    <strong>Примеры:</strong> Рабочие ноутбуки, мониторы, системные блоки, офисные принтеры, удлинители, сетевые фильтры, кофемашины, чайники и электроинструмент.
+                                    <strong>Примеры:</strong> Рабочие ноутбуки, мониторы, системные блоки, офисные
+                                    принтеры, удлинители, сетевые фильтры, кофемашины, чайники и электроинструмент.
                                 </div>
                             </li>
                             <li>
                                 <iconify-icon icon="solar:buildings-bold-duotone"></iconify-icon>
                                 <div>
-                                    <strong>Где они есть:</strong> В любом бизнесе Германии — от digital-агентства и салона красоты до крупных офисов, кафе, ресторанов и школ.
+                                    <strong>Где они есть:</strong> В любом бизнесе Германии — от digital-агентства и
+                                    салона красоты до крупных офисов, кафе, ресторанов и школ.
                                 </div>
                             </li>
                         </ul>
@@ -308,19 +347,23 @@
                             <li>
                                 <iconify-icon icon="solar:question-circle-bold-duotone"></iconify-icon>
                                 <div>
-                                    <strong>Что это такое:</strong> Крупные приборы и элементы сети, которые жестко зафиксированы на одном месте, не перемещаются и встроены прямо в инфраструктуру здания.
+                                    <strong>Что это такое:</strong> Крупные приборы и элементы сети, которые жестко
+                                    зафиксированы на одном месте, не перемещаются и встроены прямо в инфраструктуру
+                                    здания.
                                 </div>
                             </li>
                             <li>
                                 <iconify-icon icon="solar:smart-home-bold-duotone"></iconify-icon>
                                 <div>
-                                    <strong>Примеры:</strong> Электрические розетки, выключатели, встроенные системы освещения, силовые распределительные щиты, кондиционеры и станки.
+                                    <strong>Примеры:</strong> Электрические розетки, выключатели, встроенные системы
+                                    освещения, силовые распределительные щиты, кондиционеры и станки.
                                 </div>
                             </li>
                             <li>
                                 <iconify-icon icon="solar:map-point-bold-duotone"></iconify-icon>
                                 <div>
-                                    <strong>Где они есть:</strong> На любых заводах, фабриках, в складских комплексах, автомастерских, медицинских праксисах и торговых центрах.
+                                    <strong>Где они есть:</strong> На любых заводах, фабриках, в складских комплексах,
+                                    автомастерских, медицинских праксисах и торговых центрах.
                                 </div>
                             </li>
                         </ul>
@@ -335,21 +378,24 @@
                 </div>
                 <div class="trigger-text">
                     <h4>Оглянитесь вокруг:</h4>
-                    <p>Если у ваших знакомых есть бизнес в Германии, где сотрудники пользуются хотя бы ноутбуками и пьют кофе — <strong>им уже по закону необходима проверка DGUV V3.</strong> Назовите нам эту компанию и заберите свои €100 после контракта!</p>
+                    <p>Если у ваших знакомых есть бизнес в Германии, где сотрудники пользуются хотя бы ноутбуками и пьют
+                        кофе — <strong>им уже по закону необходима проверка DGUV V3.</strong> Назовите нам эту компанию
+                        и заберите свой заправочный сертификат на €100 после контракта!</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="about-company">
+    <section class="about-company" id="about">
         <div class="container">
             <div class="about-grid">
                 <div class="about-image-col">
                     <img src="img/electrician_work.png" alt="Сертифицированный электрик AS Lehmann за работой">
                 </div>
                 <div class="about-text-col">
-                    <h2 class="section-heading light-heading">AS Lehmann — ваш надежный партнер в сфере электробезопасности</h2>
-                    
+                    <h2 class="section-heading light-heading">AS Lehmann — ваш надежный партнер в сфере
+                        электробезопасности</h2>
+
                     <ul class="trust-list">
                         <li>
                             <div class="trust-icon">
@@ -357,7 +403,9 @@
                             </div>
                             <div class="trust-text">
                                 <h3>Квалифицированные Elektrofachkräfte</h3>
-                                <p>Все проверки проводятся исключительно сертифицированными специалистами-электриками с профильным немецким образованием и глубоким опытом работы. Наши эксперты досконально знают применимые нормы безопасности и директивы VDE.</p>
+                                <p>Все проверки проводятся исключительно сертифицированными специалистами-электриками с
+                                    профильным немецким образованием и глубоким опытом работы. Наши эксперты досконально
+                                    знают применимые нормы безопасности и директивы VDE.</p>
                             </div>
                         </li>
                         <li>
@@ -366,7 +414,10 @@
                             </div>
                             <div class="trust-text">
                                 <h3>100% официальный и легальный бизнес</h3>
-                                <p>Мы работаем строго по регламентированным законам Германии. По итогам аудита вы получаете детальный юридически значимый протокол испытаний (Prüfprotokoll), который полностью одобряется государственными органами, страховыми компаниями и профсоюзами (Berufsgenossenschaft).</p>
+                                <p>Мы работаем строго по регламентированным законам Германии. По итогам аудита вы
+                                    получаете детальный юридически значимый протокол испытаний (Prüfprotokoll), который
+                                    полностью одобряется государственными органами, страховыми компаниями и профсоюзами
+                                    (Berufsgenossenschaft).</p>
                             </div>
                         </li>
                         <li>
@@ -375,13 +426,16 @@
                             </div>
                             <div class="trust-text">
                                 <h3>Безупречная репутация</h3>
-                                <p>Мы не просто ставим проверочные наклейки, а помогаем немецкому бизнесу минимизировать финансовые риски, защитить сотрудников от несчастных случаев и застраховать компанию от штрафов или внезапной остановки производства.</p>
+                                <p>Мы не просто ставим проверочные наклейки, а помогаем немецкому бизнесу минимизировать
+                                    финансовые риски, защитить сотрудников от несчастных случаев и застраховать компанию
+                                    от штрафов или внезапной остановки производства.</p>
                             </div>
                         </li>
                     </ul>
 
                     <div class="about-cta-box">
-                        <p>Если вы хотите лично убедиться в нашей экспертности, изучить спектр услуг или заказать аудит напрямую для своей фирмы — посетите наше главное представительство.</p>
+                        <p>Если вы хотите лично убедиться в нашей экспертности, изучить спектр услуг или заказать аудит
+                            напрямую для своей фирмы — посетите наше главное представительство.</p>
                         <a href="https://dguv3-prüfung.de" target="_blank" class="btn btn-outline-light">
                             Перейти на основной сайт компании
                             <iconify-icon icon="solar:arrow-right-line-duotone"></iconify-icon>
@@ -402,17 +456,20 @@
                         <iconify-icon icon="solar:alt-arrow-down-bold-duotone" class="faq-icon"></iconify-icon>
                     </div>
                     <div class="faq-answer">
-                        <p>Успешной считается та рекомендация, при которой переданная вами компания выходит с нами на контакт, наши эксперты рассчитывают стоимость, и в итоге стороны заключают официальный договор на проведение проверки электробезопасности DGUV V3.</p>
+                        <p>Успешной считается та рекомендация, при которой переданная вами компания выходит с нами на
+                            контакт, наши эксперты рассчитывают стоимость, и в итоге стороны заключают официальный
+                            договор на проведение проверки электробезопасности DGUV V3.</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <div class="faq-question">
-                        <span>Когда и как я получу свои гарантированные €100?</span>
+                        <span>Когда и как я получу свой гарантированный заправочный сертификат на €100?</span>
                         <iconify-icon icon="solar:alt-arrow-down-bold-duotone" class="faq-icon"></iconify-icon>
                     </div>
                     <div class="faq-answer">
-                        <p>Выплата в размере €100 переводится вам сразу же после того, как по вашей рекомендации будет успешно заключен и подписан официальный договор на проверку бизнеса.</p>
+                        <p>Заправочный сертификат на €100 отправляется вам сразу же после того, как по вашей
+                            рекомендации будет успешно заключен и подписан официальный договор на проверку бизнеса.</p>
                     </div>
                 </div>
 
@@ -422,7 +479,10 @@
                         <iconify-icon icon="solar:alt-arrow-down-bold-duotone" class="faq-icon"></iconify-icon>
                     </div>
                     <div class="faq-answer">
-                        <p>Да, абсолютно! Количество рекомендаций с вашей стороны никак не ограничено. Более того, это ваш главный лайфхак: больше успешных рекомендаций — больше гарантированных выплат по €100 и значительно выше ваши шансы выиграть главный приз в общем розыгрыше!</p>
+                        <p>Да, абсолютно! Количество рекомендаций с вашей стороны никак не ограничено. Более того, это
+                            ваш главный лайфхак: больше успешных рекомендаций — больше гарантированных заправочных
+                            сертификатов на €100 и значительно выше ваши шансы выиграть главный приз в общем розыгрыше!
+                        </p>
                     </div>
                 </div>
 
@@ -432,7 +492,8 @@
                         <iconify-icon icon="solar:alt-arrow-down-bold-duotone" class="faq-icon"></iconify-icon>
                     </div>
                     <div class="faq-answer">
-                        <p>В финальном розыгрыше главного приза участвует каждый человек, по чьей рекомендации (наводке) был успешно заключен хотя бы один договор на проведение проверки DGUV V3.</p>
+                        <p>В финальном розыгрыше главного приза участвует каждый человек, по чьей рекомендации (наводке)
+                            был успешно заключен хотя бы один договор на проведение проверки DGUV V3.</p>
                     </div>
                 </div>
 
@@ -442,7 +503,10 @@
                         <iconify-icon icon="solar:alt-arrow-down-bold-duotone" class="faq-icon"></iconify-icon>
                     </div>
                     <div class="faq-answer">
-                        <p>Розыгрыш незабываемого 6-дневного премиум-отпуска в 4★ Olzadia Boutique Hotel пройдет сразу по окончании периода проведения акции. Мы проведем его абсолютно прозрачно и честно среди всех квалифицированных участников. Победитель будет выбран случайным образом, а детали процесса мы опубликуем на этой странице и в наших соцсетях.</p>
+                        <p>Розыгрыш незабываемого 6-дневного премиум-отпуска в 4★ Olzadia Boutique Hotel пройдет сразу
+                            по окончании периода проведения акции. Мы проведем его абсолютно прозрачно и честно среди
+                            всех квалифицированных участников. Победитель будет выбран случайным образом, а детали
+                            процесса мы опубликуем на этой странице и в наших соцсетях.</p>
                     </div>
                 </div>
 
@@ -452,7 +516,9 @@
                         <iconify-icon icon="solar:alt-arrow-down-bold-duotone" class="faq-icon"></iconify-icon>
                     </div>
                     <div class="faq-answer">
-                        <p>Это не проблема. Мы работаем по всей Германии. Главное, чтобы рекомендуемый бизнес официально функционировал на территории ФРГ и подпадал под требования закона об обязательной проверке электробезопасности.</p>
+                        <p>Это не проблема. Мы работаем по всей Германии. Главное, чтобы рекомендуемый бизнес официально
+                            функционировал на территории ФРГ и подпадал под требования закона об обязательной проверке
+                            электробезопасности.</p>
                     </div>
                 </div>
             </div>
@@ -465,12 +531,14 @@
                 <!-- Left: Motivation -->
                 <div class="form-content-col">
                     <h2 class="form-heading">Рекомендуйте компанию и заберите свой приз!</h2>
-                    <p class="form-intro">Каждая успешная рекомендация, приведшая к подписанию контракта — это ваш гарантированный бонус в €100 и шанс оказаться вдвоем на белоснежном пляже Занзибара. Заполнение займет не больше 60 секунд.</p>
-                    
+                    <p class="form-intro">Каждая успешная рекомендация, приведшая к подписанию контракта — это ваш
+                        гарантированный бонус — заправочный сертификат на €100 и шанс оказаться вдвоем на белоснежном
+                        пляже Занзибара. Заполнение займет не больше 60 секунд.</p>
+
                     <div class="form-badges">
                         <div class="badge-item">
                             <iconify-icon icon="solar:ticket-sale-bold-duotone"></iconify-icon>
-                            <span>Гарантированные €100</span>
+                            <span>Гарантированный заправочный сертификат на €100</span>
                         </div>
                         <div class="badge-item">
                             <iconify-icon icon="solar:sun-bold-duotone"></iconify-icon>
@@ -490,38 +558,47 @@
                             <label for="userName">Ваше имя</label>
                             <input type="text" id="userName" name="userName" placeholder="Александр Иванов" required>
                         </div>
-                        
+
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="userPhone">Ваш номер телефона</label>
-                                <input type="tel" id="userPhone" name="userPhone" placeholder="+49 ___ ________" required>
+                                <input type="tel" id="userPhone" name="userPhone" placeholder="+49 ___ ________"
+                                    required>
                             </div>
                             <div class="form-group">
                                 <label for="userEmail">Ваш Email</label>
-                                <input type="email" id="userEmail" name="userEmail" placeholder="alex@example.com" required>
+                                <input type="email" id="userEmail" name="userEmail" placeholder="alex@example.com"
+                                    required>
                             </div>
                         </div>
 
                         <div class="form-group">
                             <label for="companyName">Название рекомендуемой компании</label>
-                            <input type="text" id="companyName" name="companyName" placeholder="GmbH / Фирма, которой нужна проверка DGUV V3" required>
+                            <input type="text" id="companyName" name="companyName"
+                                placeholder="GmbH / Фирма, которой нужна проверка DGUV V3" required>
                         </div>
 
                         <div class="form-group">
                             <label for="companyContact">Контактное лицо или телефон компании</label>
-                            <input type="text" id="companyContact" name="companyContact" placeholder="Имя директора, телефон или её email" required>
+                            <input type="text" id="companyContact" name="companyContact"
+                                placeholder="Имя директора, телефон или её email" required>
                         </div>
 
                         <div class="form-group">
                             <label for="userComment">Комментарий (необязательно)</label>
-                            <textarea id="userComment" name="userComment" rows="3" placeholder="Дополнительная информация, лучшее время для звонка и т.д."></textarea>
+                            <textarea id="userComment" name="userComment" rows="3"
+                                placeholder="Дополнительная информация, лучшее время для звонка и т.д."></textarea>
                         </div>
 
-                        <button type="submit" class="btn btn-primary btn-submit">ОТПРАВИТЬ РЕКОМЕНДАЦИЮ И УЧАСТВОВАТЬ</button>
+                        <button type="submit" class="btn btn-primary btn-submit">ОТПРАВИТЬ РЕКОМЕНДАЦИЮ И
+                            УЧАСТВОВАТЬ</button>
 
                         <div class="gdpr-text">
                             <iconify-icon icon="solar:lock-password-bold-duotone"></iconify-icon>
-                            <p><strong>🇪🇺 Защита данных по стандарту GDPR (Datenschutz):</strong> Мы строго соблюдаем законодательство Германии. Ваши личные данные и контакты рекомендуемой компании зашифрованы и никогда не будут переданы третьим лицам. Нажимая кнопку, вы соглашаетесь с условиями проведения акции.</p>
+                            <p><strong>🇪🇺 Защита данных по стандарту GDPR (Datenschutz):</strong> Мы строго соблюдаем
+                                законодательство Германии. Ваши личные данные и контакты рекомендуемой компании
+                                зашифрованы и никогда не будут переданы третьим лицам. Нажимая кнопку, вы соглашаетесь с
+                                условиями проведения акции.</p>
                         </div>
                     </form>
                 </div>
@@ -529,7 +606,7 @@
         </div>
     </section>
 
-    <footer class="footer">
+    <footer class="footer" id="contacts">
         <div class="container">
             <div class="footer-grid">
                 <!-- Column 1 -->
@@ -538,7 +615,8 @@
                         <img src="img/logo.png" alt="AS Lehmann Logo" class="footer-logo-img">
                         <span class="footer-logo-text">AS LEHMANN</span>
                     </div>
-                    <p class="footer-desc">Специализированная реферальная акция от компании по проверке электробезопасности оборудования и стационарных установок в Германии по стандарту DGUV V3.</p>
+                    <p class="footer-desc">Специализированная реферальная акция от компании по проверке
+                        электробезопасности оборудования и стационарных установок в Германии по стандарту DGUV V3.</p>
                     <a href="https://dguv3-prüfung.de" target="_blank" class="footer-link-main">
                         <iconify-icon icon="solar:global-bold-duotone"></iconify-icon>
                         Перейти на основной сайт
@@ -550,19 +628,19 @@
                     <h4 class="footer-heading">Юридическая информация</h4>
                     <ul class="footer-links">
                         <li>
-                            <a href="#">
+                            <a href="impressum.html">
                                 <iconify-icon icon="solar:scale-bold-duotone"></iconify-icon>
                                 Impressum
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="datenschutz.html">
                                 <iconify-icon icon="solar:shield-check-bold-duotone"></iconify-icon>
                                 Datenschutz
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="teilnahmebedingungen.html">
                                 <iconify-icon icon="solar:document-text-bold-duotone"></iconify-icon>
                                 Teilnahmebedingungen
                             </a>
@@ -592,7 +670,9 @@
 
             <div class="footer-bottom">
                 <div class="copyright">© 2025–2026 AS Lehmann. Все права защищены.</div>
-                <div class="disclaimer">Отказ от ответственности: Организатором реферальной акции является компания AS Lehmann. Платформа Booking.com, отель Olzadia Boutique Hotel и осуществляющие перелет авиакомпании не являются спонсорами, партнерами или соорганизаторами данной акции.</div>
+                <div class="disclaimer">Отказ от ответственности: Организатором реферальной акции является компания AS
+                    Lehmann. Платформа Booking.com, отель Olzadia Boutique Hotel и осуществляющие перелет авиакомпании
+                    не являются спонсорами, партнерами или соорганизаторами данной акции.</div>
             </div>
         </div>
     </footer>
@@ -639,10 +719,10 @@
             const question = item.querySelector('.faq-question');
             question.addEventListener('click', () => {
                 const isActive = item.classList.contains('active');
-                
+
                 // Close all
                 faqItems.forEach(i => i.classList.remove('active'));
-                
+
                 // Open clicked if it wasn't active
                 if (!isActive) {
                     item.classList.add('active');
@@ -651,4 +731,5 @@
         });
     </script>
 </body>
+
 </html>

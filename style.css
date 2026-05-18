@@ -17,6 +17,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: var(--font-body);
     background-color: var(--clr-bg);
@@ -106,6 +110,27 @@ body {
 .nav a.nav-btn:hover {
     opacity: 1;
     background-color: #e5d2bc;
+}
+
+.lang-switch {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-left: 1rem;
+}
+
+.lang-switch a {
+    opacity: 0.5;
+}
+
+.lang-switch a.active {
+    opacity: 1;
+    font-weight: 700;
+}
+
+.lang-switch span {
+    color: var(--clr-text-dark);
+    opacity: 0.3;
 }
 
 /* Hero Content Split Layout */
@@ -1272,6 +1297,78 @@ body {
     line-height: 1.5;
     max-width: 60%;
     margin: 0;
+}
+
+/* Legal Pages */
+.legal-header {
+    background-color: #1e293b;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    position: relative;
+    padding: 1.5rem 4rem;
+}
+
+.legal-header .logo-text, .legal-header .nav a {
+    color: #ffffff;
+}
+
+.legal-page {
+    padding: 6rem 0;
+    background-color: var(--clr-bg);
+    min-height: 50vh;
+}
+
+.legal-content {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 4rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.05);
+}
+
+.legal-content h1 {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: var(--clr-text-dark);
+}
+
+.legal-content h2 {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1.25rem;
+    color: var(--clr-text-dark);
+}
+
+.legal-content h3 {
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--clr-text-dark);
+}
+
+.legal-content p {
+    line-height: 1.7;
+    margin-bottom: 1.25rem;
+    color: #475569;
+}
+
+.legal-content ul {
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+    color: #475569;
+}
+
+.legal-content li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+.legal-content a {
+    color: var(--clr-accent);
+    text-decoration: underline;
 }
 
 /* Responsive */
