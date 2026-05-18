@@ -80,13 +80,20 @@ body {
     letter-spacing: 1px;
 }
 
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
 .nav {
     display: flex;
     align-items: center;
     gap: 2rem;
 }
 
-.nav a {
+.nav a,
+.lang-switch a {
     text-decoration: none;
     color: var(--clr-text-dark);
     font-family: var(--font-heading);
@@ -96,7 +103,8 @@ body {
     transition: opacity 0.3s ease;
 }
 
-.nav a:hover {
+.nav a:hover,
+.lang-switch a:hover {
     opacity: 0.6;
 }
 
@@ -116,7 +124,6 @@ body {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    margin-left: 1rem;
 }
 
 .lang-switch a {
@@ -1410,6 +1417,16 @@ body {
         font-size: 1.25rem;
         padding: 1rem 2.5rem;
         margin-top: 1rem;
+    }
+
+    .header-right {
+        gap: 1rem;
+    }
+    
+    .lang-switch {
+        position: relative;
+        z-index: 100;
+        margin-left: 0;
     }
     
     .mobile-menu-btn {
