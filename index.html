@@ -592,6 +592,12 @@
                                 placeholder="Дополнительная информация, лучшее время для звонка и т.д."></textarea>
                         </div>
 
+                        <label class="consent-checkbox">
+                            <input type="checkbox" name="consent" id="consentCheckbox" required>
+                            <span class="consent-checkbox__box"></span>
+                            <span class="consent-checkbox__text">Я ознакомился(-ась) с <a href="datenschutz.html" target="_blank">Политикой конфиденциальности</a> и <a href="teilnahmebedingungen.html" target="_blank">Условиями участия</a> и даю согласие на обработку моих персональных данных.</span>
+                        </label>
+
                         <button type="submit" class="btn btn-primary btn-submit">ОТПРАВИТЬ РЕКОМЕНДАЦИЮ И
                             УЧАСТВОВАТЬ</button>
 
@@ -679,6 +685,18 @@
         </div>
     </footer>
 
+    <div class="cookie-banner" id="cookieBanner" role="dialog" aria-label="Согласие на использование файлов cookie">
+        <div class="cookie-banner__inner">
+            <p class="cookie-banner__text">
+                Мы используем файлы cookie для корректной работы сайта и анализа трафика. Нажимая «Принять», вы соглашаетесь с нашей <a href="datenschutz.html">Политикой конфиденциальности</a>.
+            </p>
+            <div class="cookie-banner__actions">
+                <button class="cookie-banner__btn cookie-banner__btn--accept" id="cookieAccept">Принять</button>
+                <button class="cookie-banner__btn cookie-banner__btn--decline" id="cookieDecline">Отклонить</button>
+            </div>
+        </div>
+    </div>
+
     <script>
         // Sticky Header Effect
         const header = document.querySelector('.header');
@@ -731,6 +749,22 @@
                 }
             });
         });
+
+        // Cookie Consent
+        (function () {
+            const banner = document.getElementById('cookieBanner');
+            if (!localStorage.getItem('cookie_consent')) {
+                banner.classList.add('cookie-banner--visible');
+            }
+            document.getElementById('cookieAccept').addEventListener('click', function () {
+                localStorage.setItem('cookie_consent', 'accepted');
+                banner.classList.remove('cookie-banner--visible');
+            });
+            document.getElementById('cookieDecline').addEventListener('click', function () {
+                localStorage.setItem('cookie_consent', 'declined');
+                banner.classList.remove('cookie-banner--visible');
+            });
+        })();
     </script>
 </body>
 
