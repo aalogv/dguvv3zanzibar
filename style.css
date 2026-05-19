@@ -1779,6 +1779,53 @@ body {
     }
 }
 
+/* ─── Form Success & Error States ─── */
+.form-success {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 3rem 2rem;
+    gap: 1rem;
+    min-height: 300px;
+}
+
+.form-success__icon {
+    font-size: 3.5rem;
+    color: #4CAF50;
+    line-height: 1;
+}
+
+.form-success__title {
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--clr-text-dark);
+}
+
+.form-success__text {
+    font-size: 0.95rem;
+    color: var(--clr-text-gray);
+    line-height: 1.6;
+    max-width: 380px;
+}
+
+.form-error {
+    font-size: 0.8rem;
+    color: #c0392b;
+    background: #fdf0ef;
+    border: 1px solid #f5c6c2;
+    border-radius: 6px;
+    padding: 0.75rem 1rem;
+    line-height: 1.5;
+}
+
+.form-error a {
+    color: #c0392b;
+    text-decoration: underline;
+}
+
 /* ─── Consent Checkbox ─── */
 .consent-checkbox {
     display: flex;
