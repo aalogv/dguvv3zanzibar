@@ -813,7 +813,17 @@
             const submitBtn = document.getElementById('submitBtn');
             const successEl = document.getElementById('formSuccess');
             const errorEl = document.getElementById('formError');
+            const consentCheckbox = document.getElementById('consentCheckbox');
             const originalBtnText = submitBtn.textContent;
+
+            // Initial state — disabled until checkbox is checked
+            submitBtn.disabled = true;
+            submitBtn.classList.add('btn-submit--disabled');
+
+            consentCheckbox.addEventListener('change', function () {
+                submitBtn.disabled = !this.checked;
+                submitBtn.classList.toggle('btn-submit--disabled', !this.checked);
+            });
 
             form.addEventListener('submit', async function (e) {
                 e.preventDefault();
