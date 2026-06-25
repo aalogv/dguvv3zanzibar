@@ -571,42 +571,63 @@
                         <input type="hidden" name="utm_source" id="utm_source">
                         <input type="hidden" name="utm_campaign" id="utm_campaign">
 
-                        <div class="form-group">
-                            <label for="userName">Ваше имя</label>
-                            <input type="text" id="userName" name="userName" placeholder="Александр Иванов" required>
-                        </div>
-
-                        <div class="form-row">
+                        <!-- Section: Ваши данные -->
+                        <div class="form-section">
+                            <h3 class="form-section-title">Ваши данные</h3>
                             <div class="form-group">
-                                <label for="userPhone">Ваш номер телефона</label>
-                                <input type="tel" id="userPhone" name="userPhone" placeholder="+49 ___ ________"
-                                    required>
+                                <label for="userName">Имя и фамилия <span class="required-mark">*</span></label>
+                                <input type="text" id="userName" name="userName" placeholder="Александр Иванов" required>
                             </div>
+
                             <div class="form-group">
-                                <label for="userEmail">Ваш Email</label>
-                                <input type="email" id="userEmail" name="userEmail" placeholder="alex@example.com"
-                                    required>
+                                <label for="userPhone">Номер телефона <span class="required-mark">*</span></label>
+                                <input type="tel" id="userPhone" name="userPhone" placeholder="+49 ___ ________" required>
                             </div>
                         </div>
 
-                        <div class="form-group">
-                            <label for="companyName">Название рекомендуемой компании</label>
-                            <input type="text" id="companyName" name="companyName"
-                                placeholder="GmbH / Фирма, которой нужна проверка DGUV V3" required>
+                        <!-- Section: Рекомендуемая компания -->
+                        <div class="form-section">
+                            <h3 class="form-section-title">Рекомендуемая компания</h3>
+                            <div class="form-group">
+                                <label for="companyName">Название компании <span class="required-mark">*</span></label>
+                                <input type="text" id="companyName" name="companyName"
+                                    placeholder="GmbH / Фирма, которой нужна проверка DGUV V3" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="companyContact">Контактное лицо компании <span class="required-mark">*</span></label>
+                                <input type="text" id="companyContact" name="companyContact"
+                                    placeholder="Имя или должность" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="companyEmail">Адрес электронной почты компании <span class="required-mark">*</span></label>
+                                <input type="email" id="companyEmail" name="companyEmail"
+                                    placeholder="kontakt@example.com" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="companyPhone">Номер телефона <span class="required-mark">*</span></label>
+                                <input type="tel" id="companyPhone" name="companyPhone"
+                                    placeholder="+49 ___ ________" required>
+                            </div>
                         </div>
 
-                        <div class="form-group">
-                            <label for="companyContact">Контактное лицо или телефон компании</label>
-                            <input type="text" id="companyContact" name="companyContact"
-                                placeholder="Имя директора, телефон или её email" required>
-                        </div>
-
+                        <!-- Comment Section -->
                         <div class="form-group">
                             <label for="userComment">Комментарий (необязательно)</label>
                             <textarea id="userComment" name="userComment" rows="3"
                                 placeholder="Дополнительная информация, лучшее время для звонка и т.д."></textarea>
                         </div>
 
+                        <!-- Confirmation Checkbox (New) -->
+                        <label class="consent-checkbox">
+                            <input type="checkbox" name="confirmationConsent" id="confirmationConsent" required>
+                            <span class="consent-checkbox__box"></span>
+                            <span class="consent-checkbox__text">Я подтверждаю, что указанная компания уведомлена о рекомендации и согласна на контакт со стороны AS Lehmann в рамках данной акции.</span>
+                        </label>
+
+                        <!-- Privacy Checkbox (Existing) -->
                         <label class="consent-checkbox">
                             <input type="checkbox" name="consent" id="consentCheckbox" required>
                             <span class="consent-checkbox__box"></span>

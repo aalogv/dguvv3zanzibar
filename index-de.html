@@ -565,42 +565,63 @@
                         <input type="hidden" name="utm_source" id="utm_source">
                         <input type="hidden" name="utm_campaign" id="utm_campaign">
 
-                        <div class="form-group">
-                            <label for="userName">Ihr Name</label>
-                            <input type="text" id="userName" name="userName" placeholder="Max Mustermann" required>
-                        </div>
-
-                        <div class="form-row">
+                        <!-- Section: Ihre Daten -->
+                        <div class="form-section">
+                            <h3 class="form-section-title">Ihre Daten</h3>
                             <div class="form-group">
-                                <label for="userPhone">Ihre Telefonnummer</label>
-                                <input type="tel" id="userPhone" name="userPhone" placeholder="+49 ___ ________"
-                                    required>
+                                <label for="userName">Vorname und Nachname <span class="required-mark">*</span></label>
+                                <input type="text" id="userName" name="userName" placeholder="Max Mustermann" required>
                             </div>
+
                             <div class="form-group">
-                                <label for="userEmail">Ihre E-Mail</label>
-                                <input type="email" id="userEmail" name="userEmail" placeholder="max@example.com"
-                                    required>
+                                <label for="userPhone">Telefonnummer <span class="required-mark">*</span></label>
+                                <input type="tel" id="userPhone" name="userPhone" placeholder="+49 ___ ________" required>
                             </div>
                         </div>
 
-                        <div class="form-group">
-                            <label for="companyName">Name des empfohlenen Unternehmens</label>
-                            <input type="text" id="companyName" name="companyName"
-                                placeholder="GmbH / Firma, die eine DGUV V3-Prüfung benötigt" required>
+                        <!-- Section: Empfohlenes Unternehmen -->
+                        <div class="form-section">
+                            <h3 class="form-section-title">Empfohlenes Unternehmen</h3>
+                            <div class="form-group">
+                                <label for="companyName">Firmenname <span class="required-mark">*</span></label>
+                                <input type="text" id="companyName" name="companyName"
+                                    placeholder="GmbH / Firma, die eine DGUV V3-Prüfung benötigt" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="companyContact">Ansprechpartner im Unternehmen <span class="required-mark">*</span></label>
+                                <input type="text" id="companyContact" name="companyContact"
+                                    placeholder="Name oder Titel" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="companyEmail">E-Mail-Adresse des Unternehmens <span class="required-mark">*</span></label>
+                                <input type="email" id="companyEmail" name="companyEmail"
+                                    placeholder="kontakt@beispiel.de" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="companyPhone">Telefonnummer <span class="required-mark">*</span></label>
+                                <input type="tel" id="companyPhone" name="companyPhone"
+                                    placeholder="+49 ___ ________" required>
+                            </div>
                         </div>
 
-                        <div class="form-group">
-                            <label for="companyContact">Ansprechpartner oder Telefon des Unternehmens</label>
-                            <input type="text" id="companyContact" name="companyContact"
-                                placeholder="Name, Telefon oder E-Mail" required>
-                        </div>
-
+                        <!-- Comment Section -->
                         <div class="form-group">
                             <label for="userComment">Kommentar (optional)</label>
                             <textarea id="userComment" name="userComment" rows="3"
                                 placeholder="Zusätzliche Informationen, beste Zeit für einen Anruf, etc."></textarea>
                         </div>
 
+                        <!-- Confirmation Checkbox (New) -->
+                        <label class="consent-checkbox">
+                            <input type="checkbox" name="confirmationConsent" id="confirmationConsent" required>
+                            <span class="consent-checkbox__box"></span>
+                            <span class="consent-checkbox__text">Ich bestätige, dass das genannte Unternehmen über die Empfehlung informiert wurde und einer Kontaktaufnahme durch AS Lehmann im Rahmen dieser Aktion zugestimmt hat.</span>
+                        </label>
+
+                        <!-- Privacy Checkbox (Existing) -->
                         <label class="consent-checkbox">
                             <input type="checkbox" name="consent" id="consentCheckbox" required>
                             <span class="consent-checkbox__box"></span>
