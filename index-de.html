@@ -53,26 +53,17 @@
             <div class="hero-text-col">
                 <div class="over-heading">Empfehlungsaktion von AS Lehmann</div>
                 <h1 class="main-heading">
-                    EMPFEHLEN SIE EINEN<br class="desktop-br">
-                    <strong>KUNDEN</strong> UND<br class="desktop-br">
-                    FLIEGEN SIE ZU ZWEIT<br class="desktop-br">
-                    <strong>NACH SANSIBAR</strong>
+                    DIE AKTION IST<br class="desktop-br">
+                    <strong>BEENDET</strong> —<br class="desktop-br">
+                    DANKE FÜR<br class="desktop-br">
+                    <strong>IHRE TEILNAHME</strong>
                 </h1>
 
                 <div class="description">
                     <div class="trigger">
-                        <iconify-icon icon="solar:wallet-money-bold-duotone" class="trigger-icon"></iconify-icon>
-                        <p><strong>Ein Tankgutschein im Wert von 100 € garantiert</strong> für jeden abgeschlossenen
-                            Vertrag.</p>
-                    </div>
-                    <div class="trigger">
-                        <iconify-icon icon="solar:plain-bold-duotone" class="trigger-icon"></iconify-icon>
-                        <p><strong>Premium-Urlaub für zwei:</strong> 6 Nächte im 4★ Hotel Olzadia, inkl. Flug und
-                            Transfer.</p>
-                    </div>
-                    <div class="micro-text">
-                        <iconify-icon icon="solar:stopwatch-linear"></iconify-icon>
-                        <span>Nur 1 Minute Ausfüllzeit. Anzahl der Empfehlungen ist unbegrenzt!</span>
+                        <iconify-icon icon="solar:calendar-mark-bold-duotone" class="trigger-icon"></iconify-icon>
+                        <p><strong>Diese Aktion endete am 29.07.2026.</strong> Weitere Anmeldungen werden nicht mehr
+                            angenommen.</p>
                     </div>
                 </div>
 
@@ -528,126 +519,14 @@
 
     <section class="lead-form-section" id="form-section">
         <div class="container">
-            <div class="form-grid">
-                <!-- Left: Motivation -->
-                <div class="form-content-col">
-                    <h2 class="form-heading">Empfehlen Sie ein Unternehmen und sichern Sie sich Ihren Preis!</h2>
-                    <p class="form-intro">Jede erfolgreiche Empfehlung bedeutet einen garantierten 100 € Tankgutschein
-                        für Sie und die Chance, bald am weißen Sandstrand von Sansibar zu liegen. Das Ausfüllen dauert
-                        nicht länger als 60 Sekunden.</p>
-
-                    <div class="form-badges">
-                        <div class="badge-item">
-                            <iconify-icon icon="solar:ticket-sale-bold-duotone"></iconify-icon>
-                            <span>100 € Tankgutschein</span>
-                        </div>
-                        <div class="badge-item">
-                            <iconify-icon icon="solar:sun-bold-duotone"></iconify-icon>
-                            <span>Verlosung der Sansibar-Reise</span>
-                        </div>
-                        <div class="badge-item">
-                            <iconify-icon icon="solar:stopwatch-bold-duotone"></iconify-icon>
-                            <span>In 60 Sekunden ausgefüllt</span>
-                        </div>
+            <div class="form-card">
+                <div class="form-success">
+                    <div class="form-success__icon" style="color:#1a1a1a">
+                        <iconify-icon icon="solar:calendar-mark-bold-duotone"></iconify-icon>
                     </div>
-                </div>
-
-                <!-- Right: Form -->
-                <div class="form-card">
-                    <form class="dguv-form" id="dguvForm" action="https://api.web3forms.com/submit" method="POST">
-                        <input type="hidden" name="access_key" value="24f1f557-995e-4689-bd65-acbecdd927fc">
-                        <input type="hidden" name="subject" value="Neue Empfehlung — AS Lehmann Sansibar">
-                        <input type="hidden" name="from_name" value="AS Lehmann Referral">
-                        <input type="checkbox" name="botcheck" style="display:none">
-                        <input type="hidden" name="utm_source" id="utm_source">
-                        <input type="hidden" name="utm_campaign" id="utm_campaign">
-
-                        <!-- Section: Ihre Daten -->
-                        <div class="form-section">
-                            <h3 class="form-section-title">Ihre Daten</h3>
-                            <div class="form-group">
-                                <label for="userName">Vorname und Nachname <span class="required-mark">*</span></label>
-                                <input type="text" id="userName" name="userName" placeholder="Max Mustermann" required>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="userPhone">Telefonnummer <span class="required-mark">*</span></label>
-                                <input type="tel" id="userPhone" name="userPhone" placeholder="+49 ___ ________" required>
-                            </div>
-                        </div>
-
-                        <!-- Section: Empfohlenes Unternehmen -->
-                        <div class="form-section">
-                            <h3 class="form-section-title">Empfohlenes Unternehmen</h3>
-                            <div class="form-group">
-                                <label for="companyName">Firmenname <span class="required-mark">*</span></label>
-                                <input type="text" id="companyName" name="companyName"
-                                    placeholder="GmbH / Firma, die eine DGUV V3-Prüfung benötigt" required>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="companyContact">Ansprechpartner im Unternehmen <span class="required-mark">*</span></label>
-                                <input type="text" id="companyContact" name="companyContact"
-                                    placeholder="Name oder Titel" required>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="companyEmail">E-Mail-Adresse des Unternehmens <span class="required-mark">*</span></label>
-                                <input type="email" id="companyEmail" name="companyEmail"
-                                    placeholder="kontakt@beispiel.de" required>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="companyPhone">Telefonnummer <span class="required-mark">*</span></label>
-                                <input type="tel" id="companyPhone" name="companyPhone"
-                                    placeholder="+49 ___ ________" required>
-                            </div>
-                        </div>
-
-                        <!-- Comment Section -->
-                        <div class="form-group">
-                            <label for="userComment">Kommentar (optional)</label>
-                            <textarea id="userComment" name="userComment" rows="3"
-                                placeholder="Zusätzliche Informationen, beste Zeit für einen Anruf, etc."></textarea>
-                        </div>
-
-                        <!-- Confirmation Checkbox (New) -->
-                        <label class="consent-checkbox">
-                            <input type="checkbox" name="confirmationConsent" id="confirmationConsent" required>
-                            <span class="consent-checkbox__box"></span>
-                            <span class="consent-checkbox__text">Ich bestätige, dass das genannte Unternehmen über die Empfehlung informiert wurde und einer Kontaktaufnahme durch AS Lehmann im Rahmen dieser Aktion zugestimmt hat.</span>
-                        </label>
-
-                        <!-- Privacy Checkbox (Existing) -->
-                        <label class="consent-checkbox">
-                            <input type="checkbox" name="consent" id="consentCheckbox" required>
-                            <span class="consent-checkbox__box"></span>
-                            <span class="consent-checkbox__text">Ich habe die <a href="datenschutz.html" target="_blank">Datenschutzerklärung</a> und die <a href="teilnahmebedingungen.html" target="_blank">Teilnahmebedingungen</a> gelesen und stimme der Verarbeitung meiner personenbezogenen Daten zu.</span>
-                        </label>
-
-                        <button type="submit" class="btn btn-primary btn-submit" id="submitBtn">EMPFEHLUNG ABSENDEN UND
-                            TEILNEHMEN</button>
-
-                        <div class="form-error" id="formError" style="display:none">
-                            Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut oder schreiben Sie uns an <a href="mailto:lehmanndguv3@t-online.de">lehmanndguv3@t-online.de</a>.
-                        </div>
-
-                        <div class="gdpr-text">
-                            <iconify-icon icon="solar:lock-password-bold-duotone"></iconify-icon>
-                            <p><strong>🇪🇺 DSGVO-konformer Datenschutz:</strong> Wir halten uns strikt an die deutschen
-                                Datenschutzgesetze. Ihre persönlichen Daten und die Kontakte des empfohlenen
-                                Unternehmens werden verschlüsselt und niemals an Dritte weitergegeben. Mit Klick auf den
-                                Button akzeptieren Sie die Teilnahmebedingungen.</p>
-                        </div>
-                    </form>
-
-                    <div class="form-success" id="formSuccess" style="display:none">
-                        <div class="form-success__icon">
-                            <iconify-icon icon="solar:check-circle-bold-duotone"></iconify-icon>
-                        </div>
-                        <h3 class="form-success__title">Empfehlung erfolgreich gesendet!</h3>
-                        <p class="form-success__text">Vielen Dank! Wir haben Ihre Anfrage erhalten und werden uns bald mit dem Unternehmen in Verbindung setzen. Nach Vertragsabschluss erhalten Sie Ihren <strong>100 € Tankgutschein</strong> und nehmen automatisch an der Verlosung der Sansibar-Reise teil.</p>
-                    </div>
+                    <h3 class="form-success__title">Aktion beendet</h3>
+                    <p class="form-success__text">Diese Aktion endete am 29.07.2026. Weitere Anmeldungen werden nicht
+                        mehr angenommen.</p>
                 </div>
             </div>
         </div>
@@ -812,40 +691,6 @@
             }
         })();
 
-        // Form Submission
-        (function () {
-            const form = document.getElementById('dguvForm');
-            const submitBtn = document.getElementById('submitBtn');
-            const successEl = document.getElementById('formSuccess');
-            const errorEl = document.getElementById('formError');
-            const originalBtnText = submitBtn.textContent;
-
-            form.addEventListener('submit', async function (e) {
-                e.preventDefault();
-                errorEl.style.display = 'none';
-                submitBtn.disabled = true;
-                submitBtn.textContent = 'WIRD GESENDET...';
-
-                const data = new FormData(form);
-                try {
-                    const res = await fetch('https://api.web3forms.com/submit', {
-                        method: 'POST',
-                        body: data
-                    });
-                    const json = await res.json();
-                    if (json.success) {
-                        form.style.display = 'none';
-                        successEl.style.display = 'flex';
-                    } else {
-                        throw new Error(json.message);
-                    }
-                } catch (err) {
-                    errorEl.style.display = 'block';
-                    submitBtn.disabled = false;
-                    submitBtn.textContent = originalBtnText;
-                }
-            });
-        })();
 
         // Cookie Consent
         (function () {
